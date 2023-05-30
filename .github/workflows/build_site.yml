@@ -24,13 +24,13 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
+          
       - name: Commit and push changes
         env:
-          remote-repo: ${{ secrets.REMOTE_REPO }}
+          REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
         run: |
           cd ./Ucancel.GitHub.io
-          git remote set-url origin "$remote-repo"
+          git remote set-url origin "$REMOTE_REPO_URL"
           git checkout main
           cp -R ../public/. .
           git add -A
