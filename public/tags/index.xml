@@ -5,6 +5,23 @@
         <link>https://Ucancel.GitHub.io/tags/</link>
         <description>Recent content in Tags on Ucancel Site</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://Ucancel.GitHub.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>privacy</title>
+        <link>https://Ucancel.GitHub.io/tags/privacy/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/tags/privacy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>shortcodes</title>
+        <link>https://Ucancel.GitHub.io/tags/shortcodes/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/tags/shortcodes/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>

@@ -145,12 +145,42 @@
   </url><url>
     <loc>https://Ucancel.GitHub.io/en/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/tags/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/tags/privacy/"
+                />
   </url><url>
     <loc>https://Ucancel.GitHub.io/en/post/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/post/rich-content/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/post/rich-content/"
+                />
   </url><url>
     <loc>https://Ucancel.GitHub.io/en/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/tags/shortcodes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/tags/shortcodes/"
+                />
   </url><url>
     <loc>https://Ucancel.GitHub.io/en/post/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
