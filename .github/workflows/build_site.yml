@@ -21,13 +21,14 @@ jobs:
       #   run: cp -R ./public/. ./Ucancel.GitHub.io/
 
       - name: Commit and push changes
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.VCANCEL_SSH_PRIVATE }}
+        uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.VCANCEL_SSH_PRIVATE }}
         run: |
           cd ./Ucancel.GitHub.io
-          git remote set-url origin git@github.com:Ucancel/Ucancel.GitHub.io.git
+          git remote set-url origin ${{ secrets.REMOTE_REPO }}
           git checkout main
           cp -R ../public/. .
           git add -A
           git commit -m "Update documentation"
-          git push origin main
+          git push origin mai
