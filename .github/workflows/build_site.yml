@@ -14,6 +14,8 @@ jobs:
 
       - name: Initialize and update submodules
         run: |
+          cd ./Ucancel.GitHub.io
+          git checkout main
           git submodule init
           git submodule update
 
@@ -22,29 +24,29 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Switch to submodule and checkout
-        env:
-          REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
-        run: |
-          cd ./Ucancel.GitHub.io
-          git remote set-url origin "$REMOTE_REPO_URL"
-          git checkout main
+      # - name: Switch to submodule and checkout
+      #   env:
+      #     REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
+      #   run: |
+      #     cd ./Ucancel.GitHub.io
+      #     git remote set-url origin "$REMOTE_REPO_URL"
+      #     git checkout main
 
       - name: Remove unnecessary files in repository
         run: |
-          pwd
+          cd ./Ucancel.GitHub.io
           shopt -s extglob
           rm -r !(.git|.gitignore|README.md)
 
       - name: Copy files to repository
         run: |
-          pwd
-          cp -R ../public/. .
+          cp -R ./public/. ./Ucancel.GitHub.io/
 
       - name: Commit and push changes
         env:
           REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
         run: |
+          git remote set-url origin "$REMOTE_REPO_URL"
           if [[ $(git status --porcelain) ]]; then
             git add -A
             git commit -m "Update io site."
