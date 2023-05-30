@@ -22,9 +22,13 @@ jobs:
 
       - name: Commit and push changes
         env:
-          ssh-key: ${{ secrets.VCANCEL_SSH_PRIVATE }}
+          SSH_PRIVATE_KEY: ${{ secrets.VCANCEL_SSH_PRIVATE }}
         run: |
           cd ./Ucancel.GitHub.io
+          echo "${SSH_PRIVATE_KEY}" > ssh_key
+          chmod 600 ssh_key
+          eval $(ssh-agent -s)
+          ssh-add ssh_key
           git checkout main
           git add -A
           git commit -m "Update documentation"
