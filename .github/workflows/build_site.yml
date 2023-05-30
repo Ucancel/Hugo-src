@@ -1,0 +1,30 @@
+name: Bridge Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+
+      - name: Initialize and update submodules
+        run: |
+          git submodule init
+          git submodule update
+
+      - name: Copy files to io repository
+        run: cp -R ./public/. ./Ucancel.GitHub.io/
+
+      - name: Commit and push changes
+        run: |
+          cd ./Ucancel.GitHub.io
+          git config user.name "Ucancel"
+          git config user.email "idsmainio@outlook.com"
+          git add -A
+          git commit -m "Update documentation"
+          git push
