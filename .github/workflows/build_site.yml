@@ -21,6 +21,8 @@ jobs:
         run: cp -R ./public/. ./Ucancel.GitHub.io/
 
       - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           cd ./Ucancel.GitHub.io
           git config user.name "Ucancel"
@@ -28,4 +30,4 @@ jobs:
           git checkout main
           git add -A
           git commit -m "Update documentation"
-          git push
+          git push origin main
