@@ -17,14 +17,11 @@ jobs:
           git submodule init
           git submodule update
 
-      # - name: Copy files to io repository
-      #   run: cp -R ./public/. ./Ucancel.GitHub.io/
-
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          
+
       - name: Commit and push changes
         env:
           REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
@@ -33,6 +30,10 @@ jobs:
           git remote set-url origin "$REMOTE_REPO_URL"
           git checkout main
           cp -R ../public/. .
-          git add -A
-          git commit -m "Update documentation"
-          git push origin main
+          if [[ $(git status --porcelain) ]]; then
+            git add -A
+            git commit -m "Update documentation"
+            git push origin main
+          else
+            echo "No changes in 'public' folder. Skipping commit and push."
+          fi
