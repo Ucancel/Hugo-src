@@ -1,0 +1,33 @@
+.left-sidebar {
+    --sidebar-avatar-size: 120px;
+    --sidebar-element-separation: 20px;
+    --emoji-size: 40px;
+    --emoji-font-size: 20px;
+}
+
+.sidebar header {
+    .site-name {
+        font-size: 2.4rem;
+
+        @include respond(2xl) {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+
+#i18n-switch {
+    button {
+        padding: 0;
+        border: 0;
+        color: var(--accent-color);
+        background-color: unset;
+    }
+
+    button:disabled {
+        padding: 0;
+        border: 0;
+        color: var(--body-text-color);
+        background-color: unset;
+    }
+}
