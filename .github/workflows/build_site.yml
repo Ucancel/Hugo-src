@@ -30,7 +30,7 @@ jobs:
           remote-repo: ${{ secrets.REMOTE_REPO }}
         run: |
           cd ./Ucancel.GitHub.io
-          git remote set-url origin $remote-repo
+          git remote set-url origin git@github.com:Ucancel/Ucancel.GitHub.io.git
           git checkout main
           cp -R ../public/. .
           git add -A
