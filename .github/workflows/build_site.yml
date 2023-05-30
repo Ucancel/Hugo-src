@@ -21,7 +21,7 @@ jobs:
         run: cp -R ./public/. ./Ucancel.GitHub.io/
 
       - name: Commit and push changes
-        with:
+        env:
           ssh-key: ${{ secrets.VCANCEL_SSH_PRIVATE }}
         run: |
           cd ./Ucancel.GitHub.io
