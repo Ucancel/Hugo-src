@@ -20,10 +20,12 @@ jobs:
       # - name: Copy files to io repository
       #   run: cp -R ./public/. ./Ucancel.GitHub.io/
 
-      - name: Commit and push changes
+      - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.VCANCEL_SSH_PRIVATE }}
+
+      - name: Commit and push changes
         run: |
           cd ./Ucancel.GitHub.io
           git remote set-url origin ${{ secrets.REMOTE_REPO }}
@@ -31,4 +33,4 @@ jobs:
           cp -R ../public/. .
           git add -A
           git commit -m "Update documentation"
-          git push origin mai
+          git push origin main
