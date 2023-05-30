@@ -25,10 +25,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.VCANCEL_SSH_PRIVATE }}
         run: |
           cd ./Ucancel.GitHub.io
-          echo "${SSH_PRIVATE_KEY}" > ssh_key
-          chmod 600 ssh_key
-          eval $(ssh-agent -s)
-          ssh-add ssh_key
           git remote set-url origin git@github.com:Ucancel/Ucancel.GitHub.io.git
           git checkout main
           git add -A
