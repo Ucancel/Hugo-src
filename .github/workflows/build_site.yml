@@ -25,6 +25,7 @@ jobs:
           cd ./Ucancel.GitHub.io
           git config user.name "Ucancel"
           git config user.email "idsmainio@outlook.com"
+          git checkout main
           git add -A
           git commit -m "Update documentation"
           git push
