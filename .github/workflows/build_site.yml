@@ -17,8 +17,8 @@ jobs:
           git submodule init
           git submodule update
 
-      - name: Copy files to io repository
-        run: cp -R ./public/. ./Ucancel.GitHub.io/
+      # - name: Copy files to io repository
+      #   run: cp -R ./public/. ./Ucancel.GitHub.io/
 
       - name: Commit and push changes
         env:
@@ -27,6 +27,7 @@ jobs:
           cd ./Ucancel.GitHub.io
           git remote set-url origin git@github.com:Ucancel/Ucancel.GitHub.io.git
           git checkout main
+          cp -R ../public/. .
           git add -A
           git commit -m "Update documentation"
           git push origin main
