@@ -22,17 +22,29 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Commit and push changes
+      - name: Switch to submodule and checkout
         env:
           REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
         run: |
           cd ./Ucancel.GitHub.io
           git remote set-url origin "$REMOTE_REPO_URL"
           git checkout main
+
+      - name: Remove unnecessary files in repository
+        run: |
+          rm -r !(.git|.gitignore|README.md)
+
+      - name: Copy files to repository
+        run: |
           cp -R ../public/. .
+
+      - name: Commit and push changes
+        env:
+          REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
+        run: |
           if [[ $(git status --porcelain) ]]; then
             git add -A
-            git commit -m "Update documentation"
+            git commit -m "Update io site."
             git push origin main
           else
             echo "No changes in 'public' folder. Skipping commit and push."
