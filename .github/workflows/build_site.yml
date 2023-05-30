@@ -32,6 +32,7 @@ jobs:
 
       - name: Remove unnecessary files in repository
         run: |
+          shopt -s extglob
           rm -r !(.git|.gitignore|README.md)
 
       - name: Copy files to repository
