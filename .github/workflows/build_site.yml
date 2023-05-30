@@ -32,11 +32,13 @@ jobs:
 
       - name: Remove unnecessary files in repository
         run: |
+          pwd
           shopt -s extglob
           rm -r !(.git|.gitignore|README.md)
 
       - name: Copy files to repository
         run: |
+          pwd
           cp -R ../public/. .
 
       - name: Commit and push changes
