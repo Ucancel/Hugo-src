@@ -46,6 +46,7 @@ jobs:
         env:
           REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
         run: |
+          cd ./Ucancel.GitHub.io
           git remote set-url origin "$REMOTE_REPO_URL"
           if [[ $(git status --porcelain) ]]; then
             git add -A
