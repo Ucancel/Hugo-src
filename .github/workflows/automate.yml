@@ -31,7 +31,7 @@ jobs:
           cd ./"$DEPLOY_REPO_NAME"
           git checkout main
           shopt -s extglob
-          rm -r !(.git|.gitignore|README.md)
+          rm -r !(.git|.gitignore|.nojekyll|README.md)
           cp -R ../public/. .
           git remote set-url origin "$DEPLOY_REPO_URL"
           if [[ $(git status --porcelain) ]]; then
