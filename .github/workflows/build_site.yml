@@ -26,16 +26,6 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      # - name: Remove unnecessary files in repository
-      #   run: |
-      #     cd ./"$DEPLOY_REPO_NAME"
-      #     shopt -s extglob
-      #     rm -r !(.git|.gitignore|README.md)
-
-      # - name: Copy files to repository
-      #   run: |
-      #     cp -R ./public/. ./"$DEPLOY_REPO_NAME"/
-
       - name: Commit and push changes
         run: |
           cd ./"$DEPLOY_REPO_NAME"
