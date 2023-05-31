@@ -28,7 +28,7 @@ jobs:
 
       - name: Remove unnecessary files in repository
         run: |
-          cd ./"DEPLOY_REPO_NAME"
+          cd ./"$DEPLOY_REPO_NAME"
           shopt -s extglob
           rm -r !(.git|.gitignore|README.md)
 
