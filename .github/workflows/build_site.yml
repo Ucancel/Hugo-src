@@ -8,9 +8,13 @@ jobs:
   build:
     runs-on: macos-latest
 
+    env:
+      DEPLOY_REPO_NAME: ${{ secrets.DEPLOY_REPO_NAME }}
+      DEPLOY_REPO_URL: ${{ secrets.DEPLOY_REPO_URL }}
+
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Initialize and update submodules
         run: |
@@ -18,21 +22,13 @@ jobs:
           git submodule update
 
       - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.0
+        uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      # - name: Switch to submodule and checkout
-      #   env:
-      #     REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
-      #   run: |
-      #     cd ./Ucancel.GitHub.io
-      #     git remote set-url origin "$REMOTE_REPO_URL"
-      #     git checkout main
-
       - name: Remove unnecessary files in repository
         run: |
-          cd ./Ucancel.GitHub.io
+          cd ./"DEPLOY_REPO_NAME"
           shopt -s extglob
           rm -r !(.git|.gitignore|README.md)
 
@@ -41,11 +37,9 @@ jobs:
           cp -R ./public/. ./Ucancel.GitHub.io/
 
       - name: Commit and push changes
-        env:
-          REMOTE_REPO_URL: ${{ secrets.REMOTE_REPO }}
         run: |
-          cd ./Ucancel.GitHub.io
-          git remote set-url origin "$REMOTE_REPO_URL"
+          cd ./"$DEPLOY_REPO_NAME"
+          git remote set-url origin "$DEPLOY_REPO_URL"
           git checkout main
           if [[ $(git status --porcelain) ]]; then
             git add -A
