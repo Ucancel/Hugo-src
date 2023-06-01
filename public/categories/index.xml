@@ -6,7 +6,15 @@
         <description>Recent content in Categories on Ucancel Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 01 Jun 2023 22:59:43 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 01 Jun 2023 23:48:42 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux</title>
+        <link>https://Ucancel.GitHub.io/categories/linux/</link>
+        <pubDate>Thu, 01 Jun 2023 23:48:42 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/categories/linux/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>DataSource</title>
         <link>https://Ucancel.GitHub.io/categories/datasource/</link>
         <pubDate>Thu, 01 Jun 2023 22:59:43 +0800</pubDate>

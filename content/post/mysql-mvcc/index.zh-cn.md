@@ -1,5 +1,5 @@
 ---
-title: "MySQL >> MVCC"
+title: MySQL >> MVCC
 author: Jiaqi Gao
 description: 
 date: 2023-06-01T22:59:43+08:00
