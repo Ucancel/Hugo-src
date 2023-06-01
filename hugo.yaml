@@ -53,7 +53,7 @@ params:
 
     sidebar:
         compact: false
-        emoji: 🔨
+        emoji: 🍭
         subtitle: Whatever can happen will happen.
         avatar:
             enabled: true

@@ -2,10 +2,16 @@
     --sidebar-avatar-size: 120px;
     --sidebar-element-separation: 20px;
     --emoji-size: 40px;
-    --emoji-font-size: 20px;
+    --emoji-font-size: 15px;
 }
 
 .sidebar header {
+    .site-avatar {
+        .emoji {
+            border: 1px solid var(--card-status-border-color);
+            background-color: var(--card-status-background);
+        }
+    }
     .site-name {
         font-size: 2.4rem;
 

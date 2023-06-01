@@ -12,3 +12,16 @@
         height: 0; /* 设置横向滚动条宽度 */
     }
 }
+
+/*
+*   Card style
+*/
+:root {
+
+    --card-status-background: #fff;
+    --card-status-border-color: #acb5bc;
+
+    &[data-scheme="dark"] {
+        --card-status-background: #eaeaea;
+    }
+}
