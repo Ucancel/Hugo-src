@@ -2,34 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Ucancel.GitHub.io/page/</loc>
-    <lastmod>2023-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/page/"
-                />
-  </url><url>
-    <loc>https://Ucancel.GitHub.io/</loc>
-    <lastmod>2023-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/"
-                />
-  </url><url>
     <loc>https://Ucancel.GitHub.io/categories/</loc>
-    <lastmod>2023-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,34 +15,20 @@
                 href="https://Ucancel.GitHub.io/categories/"
                 />
   </url><url>
-    <loc>https://Ucancel.GitHub.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/categories/"
-                />
+    <loc>https://Ucancel.GitHub.io/tags/datasource/</loc>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
   </url><url>
-    <loc>https://Ucancel.GitHub.io/post/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/post/test-chinese/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/post/test-chinese/"
-                />
+    <loc>https://Ucancel.GitHub.io/categories/datasource/</loc>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/tags/mysql/</loc>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/post/mysql-mvcc/</loc>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
   </url><url>
     <loc>https://Ucancel.GitHub.io/post/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -80,21 +40,72 @@
                 href="https://Ucancel.GitHub.io/post/"
                 />
   </url><url>
-    <loc>https://Ucancel.GitHub.io/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://Ucancel.GitHub.io/tags/</loc>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Ucancel.GitHub.io/en/categories/test/"
+                href="https://Ucancel.GitHub.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/categories/test/"
+                href="https://Ucancel.GitHub.io/tags/"
                 />
   </url><url>
-    <loc>https://Ucancel.GitHub.io/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://Ucancel.GitHub.io/</loc>
+    <lastmod>2023-06-01T22:59:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/"
+                />
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/tags/java/</loc>
+    <lastmod>2023-06-01T22:40:11+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/categories/java/</loc>
+    <lastmod>2023-06-01T22:40:11+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/categories/spring-framework/</loc>
+    <lastmod>2023-06-01T22:40:11+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/tags/springboot/</loc>
+    <lastmod>2023-06-01T22:40:11+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/post/springboot-dynamic-datasource/</loc>
+    <lastmod>2023-06-01T22:40:11+08:00</lastmod>
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/page/</loc>
+    <lastmod>2023-06-01T21:36:46+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/page/"
+                />
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/categories/</loc>
+    <lastmod>2023-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/categories/"
+                />
   </url><url>
     <loc>https://Ucancel.GitHub.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -109,85 +120,8 @@
                 href="https://Ucancel.GitHub.io/archives/"
                 />
   </url><url>
-    <loc>https://Ucancel.GitHub.io/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/tags/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/tags/privacy/"
-                />
-  </url><url>
-    <loc>https://Ucancel.GitHub.io/post/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/post/rich-content/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/post/rich-content/"
-                />
-  </url><url>
-    <loc>https://Ucancel.GitHub.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/tags/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/tags/shortcodes/"
-                />
-  </url><url>
-    <loc>https://Ucancel.GitHub.io/tags/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/tags/"
-                />
-  </url><url>
-    <loc>https://Ucancel.GitHub.io/tags/emoji/</loc>
-    <lastmod>2012-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/tags/emoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/tags/emoji/"
-                />
-  </url><url>
-    <loc>https://Ucancel.GitHub.io/post/emoji-support/</loc>
-    <lastmod>2012-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/post/emoji-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/post/emoji-support/"
-                />
-  </url><url>
     <loc>https://Ucancel.GitHub.io/about/</loc>
+    <lastmod>2023-06-01T21:36:46+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

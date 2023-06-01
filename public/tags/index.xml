@@ -6,28 +6,36 @@
         <description>Recent content in Tags on Ucancel Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>privacy</title>
-        <link>https://Ucancel.GitHub.io/tags/privacy/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        <lastBuildDate>Thu, 01 Jun 2023 22:59:43 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>DataSource</title>
+        <link>https://Ucancel.GitHub.io/tags/datasource/</link>
+        <pubDate>Thu, 01 Jun 2023 22:59:43 +0800</pubDate>
         
-        <guid>https://Ucancel.GitHub.io/tags/privacy/</guid>
+        <guid>https://Ucancel.GitHub.io/tags/datasource/</guid>
         <description></description>
         </item>
         <item>
-        <title>shortcodes</title>
-        <link>https://Ucancel.GitHub.io/tags/shortcodes/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        <title>MySQL</title>
+        <link>https://Ucancel.GitHub.io/tags/mysql/</link>
+        <pubDate>Thu, 01 Jun 2023 22:59:43 +0800</pubDate>
         
-        <guid>https://Ucancel.GitHub.io/tags/shortcodes/</guid>
+        <guid>https://Ucancel.GitHub.io/tags/mysql/</guid>
         <description></description>
         </item>
         <item>
-        <title>emoji</title>
-        <link>https://Ucancel.GitHub.io/tags/emoji/</link>
-        <pubDate>Fri, 09 Mar 2012 00:00:00 +0000</pubDate>
+        <title>Java</title>
+        <link>https://Ucancel.GitHub.io/tags/java/</link>
+        <pubDate>Thu, 01 Jun 2023 22:40:11 +0800</pubDate>
         
-        <guid>https://Ucancel.GitHub.io/tags/emoji/</guid>
+        <guid>https://Ucancel.GitHub.io/tags/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>SpringBoot</title>
+        <link>https://Ucancel.GitHub.io/tags/springboot/</link>
+        <pubDate>Thu, 01 Jun 2023 22:40:11 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/tags/springboot/</guid>
         <description></description>
         </item>
         

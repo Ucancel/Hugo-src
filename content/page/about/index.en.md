@@ -1,15 +1,12 @@
 ---
-title: "About"
+title: About
 description: Hugo, the world's fastest framework for building websites
 date: '2019-02-28'
 layout: about
 slug: about
-# aliases:
-#   - about-us
-#   - about-hugo
-#   - contact
+aliases:
 license: CC BY-NC-ND
-lastmod: '2020-10-09'
+lastmod: 2023-06-01T21:36:46+08:00
 menu:
     main: 
         weight: -60
@@ -17,20 +14,27 @@ menu:
             icon: user
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+> Whatever can happen will happen.
 
-Hugo makes use of a variety of open source projects including:
+## Ucancel's Blog
+### Site
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+Built with [**GitHub Pages**](https://pages.github.com) & [**Hugo**](https://gohugo.io) .
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+### Blog
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+It is easy to build a blog, but it is rare to stick to it.
+What is written here is not only technology, but also youth.
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+### Blogger
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+* A development engineer who sometimes lies flat and sometimes works hard.
+* Movie enthusiast：**《Interstellar》**、**《Tron: Legacy》**。
+
+### Thanks
+
+I would like to express my gratitude to those who have helped me.
+
+## Disclaimer
+
+**All the content provided by this site is for learning, sharing and communication only, and there is no guarantee that the content is absolutely correct and will not be out of date. The risks that follow through the use of the content of this site have nothing to do with this site. When using the content of this site, it means that you have accepted the disclaimer terms of this site.**

@@ -1,5 +1,0 @@
----
-title: "Text"
-description: 
-image: 
----
