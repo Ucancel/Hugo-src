@@ -67,7 +67,7 @@ search:
 
 footer:
     builtWith:
-        other: Built with {{ .Generator }}
+        other: Powered by {{ .Generator }}
 
     designedBy:
         other: • {{ .Theme }} 

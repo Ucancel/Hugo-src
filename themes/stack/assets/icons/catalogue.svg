@@ -1,18 +1,1 @@
-<!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M15 15m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-  <path d="M18.5 18.5l2.5 2.5" />
-  <path d="M4 6h16" />
-  <path d="M4 12h4" />
-  <path d="M4 18h4" />
-</svg> -->
-
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 6l11 0" />
-  <path d="M9 12l11 0" />
-  <path d="M9 18l11 0" />
-  <path d="M5 6l0 .01" />
-  <path d="M5 12l0 .01" />
-  <path d="M5 18l0 .01" />
-</svg>
+<svg t="1685551877350" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="119144" width="200" height="200"><path d="M336 96H176c-61.8 0-112 50.2-112 112v160c0 61.8 50.2 112 112 112h160c61.8 0 112-50.2 112-112V208c0-61.8-50.2-112-112-112z m48 272c0 26.5-21.5 48-48 48H176c-26.5 0-48-21.5-48-48V208c0-26.5 21.5-48 48-48h160c26.5 0 48 21.5 48 48v160zM336 544H176c-61.8 0-112 50.2-112 112v160c0 61.8 50.2 112 112 112h160c61.8 0 112-50.2 112-112V656c0-61.8-50.2-112-112-112z m48 272c0 26.5-21.5 48-48 48H176c-26.5 0-48-21.5-48-48V656c0-26.5 21.5-48 48-48h160c26.5 0 48 21.5 48 48v160zM512 160h448v64H512zM512 352h448v64H512zM512 608h448v64H512zM512 800h448v64H512z" fill="currentColor" p-id="119145"></path></svg>

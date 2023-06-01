@@ -1,18 +1,1 @@
-<!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg> -->
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tags" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M7.859 6h-2.834a2.025 2.025 0 0 0 -2.025 2.025v2.834c0 .537 .213 1.052 .593 1.432l6.116 6.116a2.025 2.025 0 0 0 2.864 0l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-6.117 -6.116a2.025 2.025 0 0 0 -1.431 -.593z" />
-  <path d="M17.573 18.407l2.834 -2.834a2.025 2.025 0 0 0 0 -2.864l-7.117 -7.116" />
-  <path d="M6 9h-.01" />
-</svg> -->
-
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmarks" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M13 7a2 2 0 0 1 2 2v12l-5 -3l-5 3v-12a2 2 0 0 1 2 -2h6z" />
-  <path d="M9.265 4a2 2 0 0 1 1.735 -1h6a2 2 0 0 1 2 2v12l-1 -.6" />
-</svg>
+<svg t="1685550674428" class="icon" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="110257" width="200" height="200"><path d="M256 256q0-30.281143-21.430857-51.712t-51.712-21.430857-51.712 21.430857-21.430857 51.712 21.430857 51.712 51.712 21.430857 51.712-21.430857 21.430857-51.712zM865.718857 585.142857q0 30.281143-21.138286 51.419429l-280.576 281.161143q-22.308571 21.138286-52.004571 21.138286-30.281143 0-51.419429-21.138286l-408.576-409.161143q-21.723429-21.138286-36.864-57.709714t-15.140571-66.852571l0-237.714286q0-29.696 21.723429-51.419429t51.419429-21.723429l237.714286 0q30.281143 0 66.852571 15.140571t58.294857 36.864l408.576 407.990857q21.138286 22.308571 21.138286 52.004571zM1085.147429 585.142857q0 30.281143-21.138286 51.419429l-280.576 281.161143q-22.308571 21.138286-52.004571 21.138286-20.553143 0-33.718857-7.972571t-30.281143-25.746286l268.580571-268.580571q21.138286-21.138286 21.138286-51.419429 0-29.696-21.138286-52.004571l-408.576-407.990857q-21.723429-21.723429-58.294857-36.864t-66.852571-15.140571l128 0q30.281143 0 66.852571 15.140571t58.294857 36.864l408.576 407.990857q21.138286 22.308571 21.138286 52.004571z" fill="currentColor" p-id="110258"></path></svg>

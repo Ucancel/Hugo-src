@@ -48,10 +48,11 @@ params:
         customText: 
 
     dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+        published: Jan 02 2006
+        lastUpdated: Jan 02 2006 15:04 MST
 
     sidebar:
+        compact: false
         emoji: 🔨
         subtitle: Whatever can happen will happen.
         avatar:
@@ -196,18 +197,21 @@ menu:
         - identifier: github
           name: GitHub
           url: https://github.com/Ucancel
+          weight: 
           params:
               icon: brand-github
 
         - identifier: twitter
           name: Twitter
           url: https://twitter.com/Qimains
+          wieght: 
           params:
               icon: brand-twitter
 
         - identifier: mail
           name: Gmail
           url: mailto:jiaqi.gao.dev@gmail.com
+          weight: 
           params:
               icon: mail
 
