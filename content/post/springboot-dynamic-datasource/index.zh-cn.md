@@ -1,5 +1,5 @@
 ---
-title: Springboot >> 动态数据源
+title: Springboot Dynamic Datasource
 author: Jiaqi Gao
 description: 
 date: 2023-06-01T22:40:11+08:00
@@ -12,10 +12,8 @@ hidden: false
 comments: true
 draft: false
 categories:
-  - Java
   - Spring Framework
 tags:
-  - Java
   - SpringBoot
 series:
 aliases:

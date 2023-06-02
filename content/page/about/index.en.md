@@ -1,7 +1,7 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
-date: '2019-02-28'
+description: 
+date: 2019-02-28
 layout: about
 slug: about
 aliases:
@@ -14,7 +14,7 @@ menu:
             icon: user
 ---
 
-> Whatever can happen will happen.
+> Whatever can happen will happen
 
 ## Ucancel's Blog
 ### Site

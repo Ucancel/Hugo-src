@@ -6,36 +6,60 @@
         <description>Recent content in Categories on Ucancel Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 01 Jun 2023 23:48:42 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux</title>
-        <link>https://Ucancel.GitHub.io/categories/linux/</link>
-        <pubDate>Thu, 01 Jun 2023 23:48:42 +0800</pubDate>
-        
-        <guid>https://Ucancel.GitHub.io/categories/linux/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>DataSource</title>
-        <link>https://Ucancel.GitHub.io/categories/datasource/</link>
-        <pubDate>Thu, 01 Jun 2023 22:59:43 +0800</pubDate>
-        
-        <guid>https://Ucancel.GitHub.io/categories/datasource/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Sat, 03 Jun 2023 00:35:33 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Java</title>
         <link>https://Ucancel.GitHub.io/categories/java/</link>
-        <pubDate>Thu, 01 Jun 2023 22:40:11 +0800</pubDate>
+        <pubDate>Sat, 03 Jun 2023 00:35:33 +0800</pubDate>
         
         <guid>https://Ucancel.GitHub.io/categories/java/</guid>
         <description></description>
         </item>
         <item>
+        <title>DesignPatterns</title>
+        <link>https://Ucancel.GitHub.io/categories/designpatterns/</link>
+        <pubDate>Sat, 03 Jun 2023 00:31:36 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/categories/designpatterns/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Algorithm</title>
+        <link>https://Ucancel.GitHub.io/categories/algorithm/</link>
+        <pubDate>Sat, 03 Jun 2023 00:14:15 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/categories/algorithm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>DataStructure</title>
+        <link>https://Ucancel.GitHub.io/categories/datastructure/</link>
+        <pubDate>Sat, 03 Jun 2023 00:14:15 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/categories/datastructure/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>https://Ucancel.GitHub.io/categories/database/</link>
+        <pubDate>Sat, 03 Jun 2023 00:09:29 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/categories/database/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Spring Framework</title>
         <link>https://Ucancel.GitHub.io/categories/spring-framework/</link>
-        <pubDate>Thu, 01 Jun 2023 22:40:11 +0800</pubDate>
+        <pubDate>Fri, 02 Jun 2023 23:34:23 +0800</pubDate>
         
         <guid>https://Ucancel.GitHub.io/categories/spring-framework/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://Ucancel.GitHub.io/categories/linux/</link>
+        <pubDate>Thu, 01 Jun 2023 23:48:42 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/categories/linux/</guid>
         <description></description>
         </item>
         

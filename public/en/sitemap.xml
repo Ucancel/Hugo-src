@@ -130,18 +130,6 @@
                 href="https://Ucancel.GitHub.io/en/about/"
                 />
   </url><url>
-    <loc>https://Ucancel.GitHub.io/en/links/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Ucancel.GitHub.io/links/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Ucancel.GitHub.io/en/links/"
-                />
-  </url><url>
     <loc>https://Ucancel.GitHub.io/en/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -152,6 +140,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://Ucancel.GitHub.io/en/search/"
+                />
+  </url><url>
+    <loc>https://Ucancel.GitHub.io/en/links/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://Ucancel.GitHub.io/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Ucancel.GitHub.io/en/links/"
                 />
   </url>
 </urlset>

@@ -1,4 +1,5 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+@import "custom/normalize.scss";
 @import "custom/variables.scss";
 @import "custom/sidebar.scss";
 @import "custom/images.scss";

@@ -12,10 +12,10 @@ hidden: false
 comments: true
 draft: false
 categories:
-  - DataSource
+  - Database
 tags:
   - MySQL
-  - DataSource
+  - Database
 series:
 aliases:
 ---

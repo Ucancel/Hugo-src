@@ -1,6 +1,6 @@
 ---
 title: 关于
-description: Hugo, the world's fastest framework for building websites
+description: 
 date: 2019-02-28
 layout: about
 slug: about
@@ -13,7 +13,8 @@ menu:
         params:
             icon: user
 ---
-> Whatever can happen will happen.
+
+> 该发生的总会发生
 
 ## Ucancel 的博客
 ### 站点

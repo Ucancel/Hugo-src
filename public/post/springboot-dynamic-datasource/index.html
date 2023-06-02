@@ -2,16 +2,16 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Dynamic-Datasource 在pom.xml中导入依赖 1 2 3 4 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.baomidou&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;dynamic-datasource-spring-boot-starter&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; 在application.yml中配置动态数据源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 spring: datasource: dynamic: # 设置默认的数据源或者数据源组,默认值即为main primary: main # 严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源 strict: false datasource: # 默认数据源 main: url: url username: username password: passward driver-class-name: xxx.Dirver # 其他数据源 slave_1: url: url username: username password: passward driver-class-name: xxx.Dirver 在Service方法上使用@DS注解 1 2 3 4 5 6 7 8 9 10 11 12 13 public interface DemoService { void testDynamicFunc(); } @Service public class DemoServiceImpl implements DemoService { @Override @DS(&amp;#34;main&amp;#34;) @Transactional(rollbackFor = Exception.'>
-<title>Springboot &gt;&gt; 动态数据源</title>
+<title>Springboot Dynamic Datasource</title>
 
 <link rel='canonical' href='https://Ucancel.GitHub.io/post/springboot-dynamic-datasource/'>
 
-<link rel="stylesheet" href="/scss/style.min.d751205433641d55f98e05413f892badd7a09c3e6dd5f9ea562659b98aa1d36e.css"><meta property='og:title' content='Springboot &gt;&gt; 动态数据源'>
+<link rel="stylesheet" href="/scss/style.min.1e5f7870fbfc48d4975802eb6b6265b1d223888362d707bd936024673ed72fc1.css"><meta property='og:title' content='Springboot Dynamic Datasource'>
 <meta property='og:description' content='Dynamic-Datasource 在pom.xml中导入依赖 1 2 3 4 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.baomidou&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;dynamic-datasource-spring-boot-starter&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; 在application.yml中配置动态数据源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 spring: datasource: dynamic: # 设置默认的数据源或者数据源组,默认值即为main primary: main # 严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源 strict: false datasource: # 默认数据源 main: url: url username: username password: passward driver-class-name: xxx.Dirver # 其他数据源 slave_1: url: url username: username password: passward driver-class-name: xxx.Dirver 在Service方法上使用@DS注解 1 2 3 4 5 6 7 8 9 10 11 12 13 public interface DemoService { void testDynamicFunc(); } @Service public class DemoServiceImpl implements DemoService { @Override @DS(&amp;#34;main&amp;#34;) @Transactional(rollbackFor = Exception.'>
 <meta property='og:url' content='https://Ucancel.GitHub.io/post/springboot-dynamic-datasource/'>
 <meta property='og:site_name' content='Ucancel Site'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Java' /><meta property='article:tag' content='SpringBoot' /><meta property='article:published_time' content='2023-06-01T22:40:11&#43;08:00'/><meta property='article:modified_time' content='2023-06-01T22:40:11&#43;08:00'/>
-<meta name="twitter:title" content="Springboot &gt;&gt; 动态数据源">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='SpringBoot' /><meta property='article:published_time' content='2023-06-01T22:40:11&#43;08:00'/><meta property='article:modified_time' content='2023-06-01T22:40:11&#43;08:00'/>
+<meta name="twitter:title" content="Springboot Dynamic Datasource">
 <meta name="twitter:description" content="Dynamic-Datasource 在pom.xml中导入依赖 1 2 3 4 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;com.baomidou&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;dynamic-datasource-spring-boot-starter&amp;lt;/artifactId&amp;gt; &amp;lt;/dependency&amp;gt; 在application.yml中配置动态数据源 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 spring: datasource: dynamic: # 设置默认的数据源或者数据源组,默认值即为main primary: main # 严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源 strict: false datasource: # 默认数据源 main: url: url username: username password: passward driver-class-name: xxx.Dirver # 其他数据源 slave_1: url: url username: username password: passward driver-class-name: xxx.Dirver 在Service方法上使用@DS注解 1 2 3 4 5 6 7 8 9 10 11 12 13 public interface DemoService { void testDynamicFunc(); } @Service public class DemoServiceImpl implements DemoService { @Override @DS(&amp;#34;main&amp;#34;) @Transactional(rollbackFor = Exception.">
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -268,10 +268,6 @@
     
     <header class="article-category">
         
-            <a href="/categories/java/" >
-                Java
-            </a>
-        
             <a href="/categories/spring-framework/" >
                 Spring Framework
             </a>
@@ -281,7 +277,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/post/springboot-dynamic-datasource/">Springboot &gt;&gt; 动态数据源</a>
+            <a href="/post/springboot-dynamic-datasource/">Springboot Dynamic Datasource</a>
         </h2>
     
         
@@ -429,8 +425,6 @@
     
     <section class="article-tags">
         
-            <a href="/tags/java/">Java</a>
-        
             <a href="/tags/springboot/">SpringBoot</a>
         
     </section>
@@ -451,6 +445,39 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <section class="widget relation">
+        <div class="widget-icon">
+            <svg t="1685582097401" class="icon" viewBox="0 0 1544 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="34920" width="200" height="200"><path d="M 607.233 892.701 a 134.815 134.815 0 0 1 -190.466 0 L 131.299 607.233 a 134.815 134.815 0 0 1 0 -190.466 L 416.767 131.299 a 134.815 134.815 0 0 1 190.466 0 l 285.469 285.469 a 134.815 134.815 0 0 1 0 190.466 a 45.9729 45.9729 0 0 0 65.0286 65.0286 a 226.922 226.922 0 0 0 0 -320.523 L 672.261 66.2699 a 226.922 226.922 0 0 0 -320.523 0 L 66.2699 351.693 a 226.922 226.922 0 0 0 0 320.523 L 351.693 957.73 a 226.922 226.922 0 0 0 320.523 0 a 45.9729 45.9729 0 0 0 -65.0286 -65.0286 Z" fill="currentColor" p-id="34921"></path><path d="M 1478.03 351.693 L 1192.56 66.2699 a 226.922 226.922 0 0 0 -320.523 0 a 45.9729 45.9729 0 1 0 65.0286 65.0286 a 134.815 134.815 0 0 1 190.466 0 l 285.492 285.469 a 134.861 134.861 0 0 1 0 190.466 l -285.492 285.469 a 134.815 134.815 0 0 1 -190.466 0 L 651.597 607.233 a 134.815 134.815 0 0 1 0 -190.466 A 45.9729 45.9729 0 1 0 586.568 351.693 a 226.922 226.922 0 0 0 0 320.523 l 285.469 285.515 a 226.922 226.922 0 0 0 320.523 0 L 1478.03 672.261 A 226.922 226.922 0 0 0 1478.03 351.693 Z" fill="currentColor" p-id="34922"></path></svg>
+        </div>
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-content">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/post/spring-bean-lifecycle/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://cdn.jsdelivr.net/gh/Vcancel/uPicRepo@main/uPic/Bean%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.png" loading="lazy" data-key="spring-bean-lifecycle" data-hash="https://cdn.jsdelivr.net/gh/Vcancel/uPicRepo@main/uPic/Bean的生命周期.png"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Spring Bean Lifecycle</h2>
+        </div>
+    </a>
+</article>
+
+                
+            </div>
+        </div>
+    </section>
+</aside>
 
      
     

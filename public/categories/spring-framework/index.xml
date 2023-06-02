@@ -6,8 +6,71 @@
         <description>Recent content in Spring Framework on Ucancel Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 01 Jun 2023 22:40:11 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/categories/spring-framework/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Springboot &gt;&gt; 动态数据源</title>
+        <lastBuildDate>Fri, 02 Jun 2023 23:34:23 +0800</lastBuildDate><atom:link href="https://Ucancel.GitHub.io/categories/spring-framework/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Spring Bean Lifecycle</title>
+        <link>https://Ucancel.GitHub.io/post/spring-bean-lifecycle/</link>
+        <pubDate>Fri, 02 Jun 2023 23:34:23 +0800</pubDate>
+        
+        <guid>https://Ucancel.GitHub.io/post/spring-bean-lifecycle/</guid>
+        <description>&lt;img src="https://cdn.jsdelivr.net/gh/Vcancel/uPicRepo@main/uPic/Bean的生命周期.png" alt="Featured image of post Spring Bean Lifecycle" /&gt;&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Bean的生命周期主要包含&lt;strong&gt;实例化&lt;/strong&gt;、&lt;strong&gt;属性注入&lt;/strong&gt;、&lt;strong&gt;初始化&lt;/strong&gt;、&lt;strong&gt;使用&lt;/strong&gt;和&lt;strong&gt;销毁&lt;/strong&gt;几个阶段。&lt;/p&gt;
+&lt;h2 id=&#34;bean的生命周期&#34;&gt;Bean的生命周期&lt;/h2&gt;
+&lt;h4 id=&#34;简略描述&#34;&gt;简略描述&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Spring启动，查找并加载需要被Spring管理的bean，进行Bean的实例化。&lt;/li&gt;
+&lt;li&gt;Bean实例化后对将Bean的引入和值注入到Bean的属性中。&lt;/li&gt;
+&lt;li&gt;如果Bean实现了&lt;code&gt;BeanNameAware&lt;/code&gt;接口，Spring将Bean的Id传递给&lt;code&gt;setBeanName()&lt;/code&gt;方法。&lt;/li&gt;
+&lt;li&gt;如果Bean实现了&lt;code&gt;BeanFactoryAware&lt;/code&gt;接口，Spring将调用&lt;code&gt;setBeanFactory()&lt;/code&gt;方法，将&lt;code&gt;BeanFactory&lt;/code&gt;容器实例传入。&lt;/li&gt;
+&lt;li&gt;如果Bean实现了&lt;code&gt;ApplicationContextAware&lt;/code&gt;接口的话，Spring将调用Bean的&lt;code&gt;setApplicationContext()&lt;/code&gt;方法，将Bean所在应用上下文引用传入。&lt;/li&gt;
+&lt;li&gt;如果Bean实现了&lt;code&gt;BeanPostProcessor&lt;/code&gt;接口，Spring就将调用他们的&lt;code&gt;postProcessBeforeInitialization()&lt;/code&gt;方法。&lt;/li&gt;
+&lt;li&gt;如果Bean实现了&lt;code&gt;InitializingBean&lt;/code&gt;接口，Spring将调用他们的&lt;code&gt;afterPropertiesSet()&lt;/code&gt;方法。&lt;/li&gt;
+&lt;li&gt;如果Bean使用&lt;code&gt;init-method&lt;/code&gt;声明了初始化方法，该方法也会被调用。&lt;/li&gt;
+&lt;li&gt;如果Bean实现了&lt;code&gt;BeanPostProcessor&lt;/code&gt;接口，Spring就将调用他们的&lt;code&gt;postProcessAfterInitialization()&lt;/code&gt;方法。&lt;/li&gt;
+&lt;li&gt;Bean已经准备就绪，可以被应用程序使用了。Bean将一直驻留在应用上下文中，直到应用上下文被销毁。&lt;/li&gt;
+&lt;li&gt;如果bean实现了&lt;code&gt;DisposableBean&lt;/code&gt;接口，Spring将调用它的&lt;code&gt;destroy()&lt;/code&gt;接口方法。&lt;/li&gt;
+&lt;li&gt;如果bean使用了&lt;code&gt;destroy-method&lt;/code&gt;声明销毁方法，该方法也会被调用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;完整的生命周期&#34;&gt;完整的生命周期&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/Vcancel/uPicRepo@main/uPic/Bean%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Bean的生命周期&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h6 id=&#34;初始化&#34;&gt;初始化&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BeanNameAware.setBeanName()&lt;/code&gt;：在创建此Bean的Bean工厂中设置Bean的名称，在普通属性设置之后调用，在&lt;code&gt;InitializinngBean.afterPropertiesSet()&lt;/code&gt;方法之前调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BeanClassLoaderAware.setBeanClassLoader()&lt;/code&gt;：在普通属性设置之后，&lt;code&gt;InitializingBean.afterPropertiesSet()&lt;/code&gt;之前调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BeanFactoryAware.setBeanFactory()&lt;/code&gt;：回调提供了自己的Bean实例工厂，在普通属性设置之后，在&lt;code&gt;InitializingBean.afterPropertiesSet()&lt;/code&gt;或者自定义初始化方法之前调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EnvironmentAware.setEnvironment()&lt;/code&gt;：设置&lt;code&gt;environment&lt;/code&gt;在组件使用时调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;EmbeddedValueResolverAware.setEmbeddedValueResolver()&lt;/code&gt;：设置&lt;code&gt;StringValueResolver&lt;/code&gt; 用来解决嵌入式的值域问题。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ResourceLoaderAware.setResourceLoader()&lt;/code&gt;：在普通bean对象之后调用，在&lt;code&gt;afterPropertiesSet&lt;/code&gt;或者自定义的&lt;code&gt;init-method&lt;/code&gt;之前调用，在&lt;code&gt;ApplicationContextAware&lt;/code&gt;之前调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ApplicationEventPublisherAware.setApplicationEventPublisher()&lt;/code&gt;：在普通Bean属性之后调用，在初始化调用&lt;code&gt;afterPropertiesSet&lt;/code&gt;或者自定义初始化方法之前调用。在&lt;code&gt;ApplicationContextAware&lt;/code&gt;之前调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MessageSourceAware.setMessageSource()&lt;/code&gt;：在普通bean属性之后调用，在初始化调用&lt;code&gt;afterPropertiesSet&lt;/code&gt;或者自定义初始化方法之前调用，在&lt;code&gt;ApplicationContextAware&lt;/code&gt;之前调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ApplicationContextAware.setApplicationContext()&lt;/code&gt;：在普通Bean对象生成之后调用，在&lt;code&gt;InitializingBean.afterPropertiesSet&lt;/code&gt;之前调用或者用户自定义初始化方法之前。在&lt;code&gt;ResourceLoaderAware.setResourceLoader&lt;/code&gt;，&lt;code&gt;ApplicationEventPublisherAware.setApplicationEventPublisher&lt;/code&gt;，&lt;code&gt;MessageSourceAware&lt;/code&gt;之后调用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ServletContextAware.setServletContext()&lt;/code&gt;：运行时设置&lt;code&gt;ServletContext&lt;/code&gt;，在普通Bean初始化后调用，在&lt;code&gt;InitializingBean.afterPropertiesSet&lt;/code&gt;之前调用，在 &lt;code&gt;ApplicationContextAware&lt;/code&gt; 之后调用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注：是在WebApplicationContext 运行时&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;BeanPostProcessor.postProcessBeforeInitialization()&lt;/code&gt;：将此&lt;code&gt;BeanPostProcessor&lt;/code&gt;应用于给定的新Bean实例，在任何Bean初始化回调方法（像是&lt;code&gt;InitializingBean.afterPropertiesSet&lt;/code&gt;或者自定义的初始化方法）之前调用。这个Bean将要准备填充属性的值。返回的Bean示例可能被普通对象包装，默认实现返回是一个Bean。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;BeanPostProcessor.postProcessAfterInitialization()&lt;/code&gt;： 将此&lt;code&gt;BeanPostProcessor&lt;/code&gt;应用于给定的新Bean实例，在任何Bean初始化回调方法（像是&lt;code&gt;InitializingBean.afterPropertiesSet&lt;/code&gt;或者自定义的初始化方法）之后调用。这个Bean将要准备填充属性的值。返回的Bean示例可能被普通对象包装。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;InitializingBean.afterPropertiesSet()&lt;/code&gt;：被&lt;code&gt;BeanFactory&lt;/code&gt;在设置所有Bean属性之后调用（并且满足&lt;code&gt;BeanFactory&lt;/code&gt;和&lt;code&gt;ApplicationContextAware&lt;/code&gt;）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;销毁&#34;&gt;销毁&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;DestructionAwareBeanPostProcessor.postProcessBeforeDestruction()&lt;/code&gt;：在销毁之前将此&lt;code&gt;BeanPostProcessor&lt;/code&gt;应用于给定的Bean实例。能够调用自定义回调，像是&lt;code&gt;DisposableBean&lt;/code&gt;的销毁和自定义销毁方法，这个回调仅仅适用于工厂中的单例Bean（包括内部Bean）&lt;/li&gt;
+&lt;li&gt;实现了自定义的&lt;code&gt;destory()&lt;/code&gt;方法。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Springboot Dynamic Datasource</title>
         <link>https://Ucancel.GitHub.io/post/springboot-dynamic-datasource/</link>
         <pubDate>Thu, 01 Jun 2023 22:40:11 +0800</pubDate>
         
